@@ -11,7 +11,6 @@
 		FC62C7501AF169AD0022754C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC62C74F1AF169AD0022754C /* ViewController.swift */; };
 		FC62C7531AF169AD0022754C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC62C7511AF169AD0022754C /* Main.storyboard */; };
 		FC62C7551AF169AD0022754C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC62C7541AF169AD0022754C /* Images.xcassets */; };
-		FC62C7581AF169AD0022754C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC62C7561AF169AD0022754C /* LaunchScreen.xib */; };
 		FC62C7641AF169AD0022754C /* DecipherayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC62C7631AF169AD0022754C /* DecipherayTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +31,6 @@
 		FC62C74F1AF169AD0022754C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FC62C7521AF169AD0022754C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC62C7541AF169AD0022754C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		FC62C7571AF169AD0022754C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FC62C75D1AF169AD0022754C /* DecipherayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DecipherayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC62C7621AF169AD0022754C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC62C7631AF169AD0022754C /* DecipherayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecipherayTests.swift; sourceTree = "<group>"; };
@@ -81,7 +79,6 @@
 				FC62C74F1AF169AD0022754C /* ViewController.swift */,
 				FC62C7511AF169AD0022754C /* Main.storyboard */,
 				FC62C7541AF169AD0022754C /* Images.xcassets */,
-				FC62C7561AF169AD0022754C /* LaunchScreen.xib */,
 				FC62C74B1AF169AD0022754C /* Supporting Files */,
 			);
 			path = Decipheray;
@@ -193,7 +190,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC62C7531AF169AD0022754C /* Main.storyboard in Resources */,
-				FC62C7581AF169AD0022754C /* LaunchScreen.xib in Resources */,
 				FC62C7551AF169AD0022754C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,14 +238,6 @@
 				FC62C7521AF169AD0022754C /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FC62C7561AF169AD0022754C /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FC62C7571AF169AD0022754C /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

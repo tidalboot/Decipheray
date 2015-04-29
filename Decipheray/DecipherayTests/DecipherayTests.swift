@@ -11,26 +11,19 @@ import XCTest
 
 class DecipherayTests: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func test_decipher_string_returns_who_are_you_from_correctly_ciphered_text {
+        var textToDecipher: String = decryptionHandler.decipherString("owhay reay ouyay?")
+        XCTAssertEqual(textToDecipher, "Who are you?", "Expected the returned text to be 'Who are you?' but got \(textToDecipher) instead")
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+    func test_decipher_string_returns_a_built_in_error_message_when_passed_incorrectly_ciphered_text {
+        var textToDecipher: String = decryptionHandler.decipherString("Normal text")
+        XCTAssertEqual(textToDecipher, "Incorrectly ciphered string", "Expected the built in error message but got \(textToDecipher) instead")
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
+    func test_decipher_string_returns_dont_say_that_from_correctly_ciphered_text {
+        var textToDecipher: String = decryptionHandler.decipherString("on’tdayaysayhattay!")
+        XCTAssertEqual(textToDecipher, "Don't say that!", "Expected 'Dont' say that!' but got \(textToDecipher) instead")
     }
     
 }
