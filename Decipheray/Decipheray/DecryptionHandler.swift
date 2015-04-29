@@ -19,9 +19,12 @@ public class DecryptionHandler {
         
         for (index, string) in enumerate(arrayOfStrings) {
             let stringLength = count(string) - 2
-            var newString = string.stringByPaddingToLength(stringLength, withString: string, startingAtIndex: 1)
+            var shortenedString = string.stringByPaddingToLength(stringLength, withString: string, startingAtIndex: 1)
+            var lastCharacter = shortenedString[shortenedString.endIndex.predecessor()]
+            shortenedString = dropLast(shortenedString)
+            shortenedString.insert(lastCharacter, atIndex: shortenedString.startIndex)
             
-            arrayOfStrings[index] = newString
+            arrayOfStrings[index] = shortenedString
         }
         
         return arrayOfStrings
