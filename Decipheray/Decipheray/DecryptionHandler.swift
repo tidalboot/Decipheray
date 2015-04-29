@@ -14,7 +14,7 @@ public class DecryptionHandler {
         
     }
     
-    public func decipherText (textToDecipher: String) -> [String] {
+    public func decipherText (textToDecipher: String) -> String {
         var arrayOfStrings = textToDecipher.componentsSeparatedByString(" ")
         
         for (index, string) in enumerate(arrayOfStrings) {
@@ -27,7 +27,9 @@ public class DecryptionHandler {
             arrayOfStrings[index] = shortenedString
         }
         
-        return arrayOfStrings
+        let newString = " ".join(arrayOfStrings)
+        
+        return newString
     }
     
 }
