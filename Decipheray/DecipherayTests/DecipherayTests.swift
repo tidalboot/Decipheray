@@ -8,22 +8,30 @@
 
 import UIKit
 import XCTest
+import Decipheray
 
 class DecipherayTests: XCTestCase {
     
-    func test_decipher_string_returns_who_are_you_from_correctly_ciphered_text {
-        var textToDecipher: String = decryptionHandler.decipherString("owhay reay ouyay?")
-        XCTAssertEqual(textToDecipher, "Who are you?", "Expected the returned text to be 'Who are you?' but got \(textToDecipher) instead")
+    var decryptionHandler: DecryptionHandler? = nil
+    
+    
+    override func setUp() {
+        super.setUp()
+        decryptionHandler = DecryptionHandler()
     }
     
-    func test_decipher_string_returns_a_built_in_error_message_when_passed_incorrectly_ciphered_text {
-        var textToDecipher: String = decryptionHandler.decipherString("Normal text")
-        XCTAssertEqual(textToDecipher, "Incorrectly ciphered string", "Expected the built in error message but got \(textToDecipher) instead")
+    override func tearDown() {
+        super.tearDown()
     }
     
-    func test_decipher_string_returns_dont_say_that_from_correctly_ciphered_text {
-        var textToDecipher: String = decryptionHandler.decipherString("on’tdayaysayhattay!")
-        XCTAssertEqual(textToDecipher, "Don't say that!", "Expected 'Dont' say that!' but got \(textToDecipher) instead")
+    func test_decipher_string_splits_string_with_space_in_to_an_array_of_two_strings () {
+        var textArray: [String] = decryptionHandler!.decipherText("hello you")
+        var firstString = textArray[0]
+        var secondString = textArray[1]
+        
+        XCTAssertEqual(firstString, "hello", "Expected 'hello' but got \(firstString)")
+        XCTAssertEqual(secondString, "you", "Expected 'you' but got \(secondString)")
     }
+
     
 }
