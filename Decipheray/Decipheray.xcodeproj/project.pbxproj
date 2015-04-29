@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC62C74E1AF169AD0022754C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC62C74D1AF169AD0022754C /* AppDelegate.swift */; };
+		FC62C7501AF169AD0022754C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC62C74F1AF169AD0022754C /* ViewController.swift */; };
+		FC62C7531AF169AD0022754C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC62C7511AF169AD0022754C /* Main.storyboard */; };
+		FC62C7551AF169AD0022754C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC62C7541AF169AD0022754C /* Images.xcassets */; };
+		FC62C7581AF169AD0022754C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC62C7561AF169AD0022754C /* LaunchScreen.xib */; };
+		FC62C7641AF169AD0022754C /* DecipherayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC62C7631AF169AD0022754C /* DecipherayTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC62C75E1AF169AD0022754C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC62C7401AF169AC0022754C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC62C7471AF169AD0022754C;
+			remoteInfo = Decipheray;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FC62C7481AF169AD0022754C /* Decipheray.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Decipheray.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC62C74C1AF169AD0022754C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC62C74D1AF169AD0022754C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FC62C74F1AF169AD0022754C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FC62C7521AF169AD0022754C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC62C7541AF169AD0022754C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FC62C7571AF169AD0022754C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FC62C75D1AF169AD0022754C /* DecipherayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DecipherayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC62C7621AF169AD0022754C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC62C7631AF169AD0022754C /* DecipherayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecipherayTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC62C7451AF169AD0022754C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC62C75A1AF169AD0022754C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC62C73F1AF169AC0022754C = {
+			isa = PBXGroup;
+			children = (
+				FC62C74A1AF169AD0022754C /* Decipheray */,
+				FC62C7601AF169AD0022754C /* DecipherayTests */,
+				FC62C7491AF169AD0022754C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC62C7491AF169AD0022754C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC62C7481AF169AD0022754C /* Decipheray.app */,
+				FC62C75D1AF169AD0022754C /* DecipherayTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC62C74A1AF169AD0022754C /* Decipheray */ = {
+			isa = PBXGroup;
+			children = (
+				FC62C74D1AF169AD0022754C /* AppDelegate.swift */,
+				FC62C74F1AF169AD0022754C /* ViewController.swift */,
+				FC62C7511AF169AD0022754C /* Main.storyboard */,
+				FC62C7541AF169AD0022754C /* Images.xcassets */,
+				FC62C7561AF169AD0022754C /* LaunchScreen.xib */,
+				FC62C74B1AF169AD0022754C /* Supporting Files */,
+			);
+			path = Decipheray;
+			sourceTree = "<group>";
+		};
+		FC62C74B1AF169AD0022754C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC62C74C1AF169AD0022754C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC62C7601AF169AD0022754C /* DecipherayTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC62C7631AF169AD0022754C /* DecipherayTests.swift */,
+				FC62C7611AF169AD0022754C /* Supporting Files */,
+			);
+			path = DecipherayTests;
+			sourceTree = "<group>";
+		};
+		FC62C7611AF169AD0022754C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC62C7621AF169AD0022754C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC62C7471AF169AD0022754C /* Decipheray */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC62C7671AF169AD0022754C /* Build configuration list for PBXNativeTarget "Decipheray" */;
+			buildPhases = (
+				FC62C7441AF169AD0022754C /* Sources */,
+				FC62C7451AF169AD0022754C /* Frameworks */,
+				FC62C7461AF169AD0022754C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Decipheray;
+			productName = Decipheray;
+			productReference = FC62C7481AF169AD0022754C /* Decipheray.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC62C75C1AF169AD0022754C /* DecipherayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC62C76A1AF169AD0022754C /* Build configuration list for PBXNativeTarget "DecipherayTests" */;
+			buildPhases = (
+				FC62C7591AF169AD0022754C /* Sources */,
+				FC62C75A1AF169AD0022754C /* Frameworks */,
+				FC62C75B1AF169AD0022754C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC62C75F1AF169AD0022754C /* PBXTargetDependency */,
+			);
+			name = DecipherayTests;
+			productName = DecipherayTests;
+			productReference = FC62C75D1AF169AD0022754C /* DecipherayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC62C7401AF169AC0022754C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Nick Jones";
+				TargetAttributes = {
+					FC62C7471AF169AD0022754C = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					FC62C75C1AF169AD0022754C = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = FC62C7471AF169AD0022754C;
+					};
+				};
+			};
+			buildConfigurationList = FC62C7431AF169AC0022754C /* Build configuration list for PBXProject "Decipheray" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC62C73F1AF169AC0022754C;
+			productRefGroup = FC62C7491AF169AD0022754C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC62C7471AF169AD0022754C /* Decipheray */,
+				FC62C75C1AF169AD0022754C /* DecipherayTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC62C7461AF169AD0022754C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC62C7531AF169AD0022754C /* Main.storyboard in Resources */,
+				FC62C7581AF169AD0022754C /* LaunchScreen.xib in Resources */,
+				FC62C7551AF169AD0022754C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC62C75B1AF169AD0022754C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC62C7441AF169AD0022754C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC62C7501AF169AD0022754C /* ViewController.swift in Sources */,
+				FC62C74E1AF169AD0022754C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC62C7591AF169AD0022754C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC62C7641AF169AD0022754C /* DecipherayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC62C75F1AF169AD0022754C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC62C7471AF169AD0022754C /* Decipheray */;
+			targetProxy = FC62C75E1AF169AD0022754C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FC62C7511AF169AD0022754C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC62C7521AF169AD0022754C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC62C7561AF169AD0022754C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC62C7571AF169AD0022754C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC62C7651AF169AD0022754C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FC62C7661AF169AD0022754C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC62C7681AF169AD0022754C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Decipheray/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FC62C7691AF169AD0022754C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Decipheray/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FC62C76B1AF169AD0022754C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DecipherayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Decipheray.app/Decipheray";
+			};
+			name = Debug;
+		};
+		FC62C76C1AF169AD0022754C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DecipherayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Decipheray.app/Decipheray";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC62C7431AF169AC0022754C /* Build configuration list for PBXProject "Decipheray" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC62C7651AF169AD0022754C /* Debug */,
+				FC62C7661AF169AD0022754C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC62C7671AF169AD0022754C /* Build configuration list for PBXNativeTarget "Decipheray" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC62C7681AF169AD0022754C /* Debug */,
+				FC62C7691AF169AD0022754C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FC62C76A1AF169AD0022754C /* Build configuration list for PBXNativeTarget "DecipherayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC62C76B1AF169AD0022754C /* Debug */,
+				FC62C76C1AF169AD0022754C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC62C7401AF169AC0022754C /* Project object */;
+}
