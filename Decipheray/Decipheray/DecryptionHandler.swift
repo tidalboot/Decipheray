@@ -15,20 +15,22 @@ public class DecryptionHandler {
     }
     
     public func decipherText (textToDecipher: String) -> String {
-        var arrayOfStrings = textToDecipher.componentsSeparatedByString(" ")
+        var arrayOfStrings = textToDecipher.componentsSeparatedByString("ay")
         
         for (index, string) in enumerate(arrayOfStrings) {
-            let stringLength = count(string) - 2
-            var shortenedString = string.stringByPaddingToLength(stringLength, withString: string, startingAtIndex: 1)
-            var lastCharacter = shortenedString[shortenedString.endIndex.predecessor()]
-            shortenedString = dropLast(shortenedString)
-            shortenedString.insert(lastCharacter, atIndex: shortenedString.startIndex)
-            
-            arrayOfStrings[index] = shortenedString
+            if string != "" {
+                let stringLength = count(string)
+                var shortenedString = string.stringByPaddingToLength(stringLength, withString: string, startingAtIndex: 1)
+                var lastCharacter = shortenedString[shortenedString.endIndex.predecessor()]
+                shortenedString = dropLast(shortenedString)
+                shortenedString.insert(lastCharacter, atIndex: shortenedString.startIndex)
+                
+                arrayOfStrings[index] = shortenedString
+            }
         }
         
-        let newString = " ".join(arrayOfStrings)
-        
+        var newString = " ".join(arrayOfStrings)
+        newString = dropLast(newString)
         return newString
     }
     
