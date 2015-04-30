@@ -15,7 +15,20 @@ public class DecryptionHandler {
     }
     
     public func decipherText (textToDecipher: String) -> String {
-        var arrayOfStrings = textToDecipher.componentsSeparatedByString("ay")
+        
+        var ayayIndex: String.Index?
+        var newText = textToDecipher
+        var arrayOfStrings = [String]()
+        
+        if textToDecipher.rangeOfString("ayay") != nil {
+            ayayIndex = textToDecipher.rangeOfString("ayay")?.endIndex
+            newText.splice("$", atIndex: ayayIndex!)
+            arrayOfStrings = newText.componentsSeparatedByString("ay")
+        }
+        
+        else {
+            arrayOfStrings = newText.componentsSeparatedByString("ay")
+        }
         
         for (index, string) in enumerate(arrayOfStrings) {
             if string != "" {
@@ -23,14 +36,28 @@ public class DecryptionHandler {
                 var shortenedString = string.stringByPaddingToLength(stringLength, withString: string, startingAtIndex: 1)
                 var lastCharacter = shortenedString[shortenedString.endIndex.predecessor()]
                 shortenedString = dropLast(shortenedString)
+                
                 shortenedString.insert(lastCharacter, atIndex: shortenedString.startIndex)
                 
+                if string.rangeOfString("$") != nil {
+                    shortenedString = dropLast(shortenedString)
+                    shortenedString.insert("a", atIndex: shortenedString.endIndex)
+                    shortenedString.insert("y", atIndex: shortenedString.endIndex)
+
+                }
                 arrayOfStrings[index] = shortenedString
             }
         }
         
-        var newString = " ".join(arrayOfStrings)
-        newString = dropLast(newString)
+        var finalArray = [String]()
+        
+        for (index, string) in enumerate(arrayOfStrings) {
+            if string != "" {
+                finalArray.append(string)
+            }
+        }
+        
+        var newString = " ".join(finalArray)
         return newString
     }
     
