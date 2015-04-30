@@ -17,16 +17,21 @@ public class DecryptionHandler {
     public func decipherText (textToDecipher: String) -> String {
         
         var ayayIndex: String.Index?
+        var textToBeChecked = NSMutableString(string: textToDecipher)
         var newText = textToDecipher
         var arrayOfStrings = [String]()
         
         if textToDecipher.rangeOfString("ayay") != nil {
             ayayIndex = textToDecipher.rangeOfString("ayay")?.endIndex
-            newText.splice("$", atIndex: ayayIndex!)
+            var valueToSearch = "ayay"
+            var replaceWith = "ay$"
+            var myRegEx = NSRegularExpression(pattern: valueToSearch, options: .CaseInsensitive , error: nil)
+            
+            myRegEx?.replaceMatchesInString(textToBeChecked, options: nil, range: NSMakeRange(0, textToBeChecked.length), withTemplate: replaceWith)
+            newText = textToBeChecked as String
             arrayOfStrings = newText.componentsSeparatedByString("ay")
-        }
-        
-        else {
+            
+        } else {
             arrayOfStrings = newText.componentsSeparatedByString("ay")
         }
         

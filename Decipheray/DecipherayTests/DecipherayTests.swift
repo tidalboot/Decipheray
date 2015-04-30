@@ -25,8 +25,11 @@ class DecipherayTests: XCTestCase {
     }
     
     func test_decipher_string_removes_ay_from_the_end_of_each_word_in_the_passed_in_string_and_then_moves_the_last_character_to_the_beginning () {
-        var newText: String = decryptionHandler!.decipherText("on'tdayaysayhattay!")
-        var expectedText = "don't say that !"
+//        var newText: String = decryptionHandler!.decipherText("on'tdayaysayhattay!")
+//        var expectedText = "don't say that !"
+        
+        var newText: String = decryptionHandler!.decipherText("IayustmayaysayIayovelayesttayrivendayevelopmentdayhistayayday")
+        var expectedText = "I must say I love test driven development this day"
         
         XCTAssertEqual(newText, expectedText, "Expected '\(expectedText)' but got \(newText)")
     }
