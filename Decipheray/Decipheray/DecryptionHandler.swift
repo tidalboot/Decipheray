@@ -38,7 +38,12 @@ public class DecryptionHandler {
                 var lastCharacter = shortenedString[shortenedString.endIndex.predecessor()]
                 //Removes the last chracter from the string
                 shortenedString = dropLast(shortenedString)
-                //And the puts the last character back in the string but now at the beginning
+                if shortenedString != "" {
+                    if shortenedString[shortenedString.startIndex] == " " {
+                        shortenedString.removeAtIndex(shortenedString.startIndex)
+                    }
+                }
+
                 shortenedString.insert(lastCharacter, atIndex: shortenedString.startIndex)
                 
                 //Finds whether the $ flag is present in the string
